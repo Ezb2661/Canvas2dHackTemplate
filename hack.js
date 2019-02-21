@@ -14,7 +14,7 @@ var newMouseY;
 
 function onKeyDown(keyCode){
   switch(keyCode){
-    case 45:
+    case 192:
     showGui = !showGui;
     //Disposing of old components (usually not needed)
     c.clearRect(0,0,innerWidth,innerHeight);
@@ -170,6 +170,8 @@ function cheatRenderUpdate(){
     c.fillStyle="#ffffffff";
     c.font = "30px Arial";
     c.fillText("Cheat Name", guiX + 10, guiY + 35);
+    c.font = "15px Arial";
+    c.fillText("GUI Made By Ezb2661", guiX + guiWidth - 175, guiY + 30);
     for(var i = 0; i < elements.length; i++){
       elements[i].drawComponents();
     }
